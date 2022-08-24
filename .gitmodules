@@ -1,0 +1,6 @@
+[submodule "ArtisanDream.Tools"]
+	path = ArtisanDream.Tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools
+[submodule "Matching/Assets/Tools/ArtisanDream.tools"]
+	path = Matching/Assets/Tools/ArtisanDream.tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools
