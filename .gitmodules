@@ -1,6 +1,3 @@
 [submodule "Matching/Assets/Tools/ArtisanDream.tools"]
 	path = Matching/Assets/Tools/ArtisanDream.tools
 	url = https://github.com/anthonyromrell/ArtisanDream.Tools
-[submodule "Matching/Assets/Tools/DGM1610_Spring_2022"]
-	path = Matching/Assets/Tools/DGM1610_Spring_2022
-	url = https://github.com/DeathRayXXVII/DGM1610_Spring_2022
