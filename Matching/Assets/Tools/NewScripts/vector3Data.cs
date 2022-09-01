@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu]
-public class vector3Data : MonoBehaviour
+public class vector3Data : ScriptableObject
 {
     //making a vector 3 variable
     public Vector3 value;
