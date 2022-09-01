@@ -8,6 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/intData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/textLableBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/triggerEventBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -69,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661978793922</updated>
       <workItem from="1661978800524" duration="149000" />
-      <workItem from="1661978978788" duration="4531000" />
+      <workItem from="1661978978788" duration="5612000" />
     </task>
     <servers />
   </component>
