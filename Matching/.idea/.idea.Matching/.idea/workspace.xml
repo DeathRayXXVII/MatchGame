@@ -8,9 +8,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/RandomSpawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/intData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/textLableBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/triggerEventBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/vector3Data.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,7 +73,7 @@
       <updated>1661978793922</updated>
       <workItem from="1661978800524" duration="149000" />
       <workItem from="1661978978788" duration="6232000" />
-      <workItem from="1662066230401" duration="501000" />
+      <workItem from="1662066230401" duration="2159000" />
     </task>
     <servers />
   </component>
