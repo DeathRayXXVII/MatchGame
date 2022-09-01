@@ -9,6 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/RandomSpawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/boolData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/intData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/textLableBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/triggerEventBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
@@ -73,7 +74,7 @@
       <updated>1661978793922</updated>
       <workItem from="1661978800524" duration="149000" />
       <workItem from="1661978978788" duration="6232000" />
-      <workItem from="1662066230401" duration="2159000" />
+      <workItem from="1662066230401" duration="3082000" />
     </task>
     <servers />
   </component>
