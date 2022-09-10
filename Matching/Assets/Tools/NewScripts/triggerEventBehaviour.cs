@@ -7,7 +7,7 @@ using Random = System.Random;
 public class triggerEventBehaviour : MonoBehaviour
 {
    public Renderer rend;
-   public UnityEvent triggerEnterEvent,mouseOver,collisionExit;
+   public UnityEvent triggerEnterEvent,mouseOver,collisionExit, enable;
    public Color meshOverColor = Color.magenta;
    public Color originalColor;
    public MeshRenderer meshRend;
@@ -44,7 +44,13 @@ public class triggerEventBehaviour : MonoBehaviour
    private void OnCollisionExit(Collision collision)
    {
       //collisionExit.Invoke();
+      Debug.Log("Hit collider");
       mesh = new Mesh();
       GetComponent<MeshFilter>().mesh = mesh;
+   }
+
+   private void OnEnable()
+   {
+      enable.Invoke();
    }
 }

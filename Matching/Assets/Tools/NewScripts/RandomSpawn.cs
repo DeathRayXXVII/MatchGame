@@ -12,7 +12,7 @@ public class RandomSpawn : MonoBehaviour
 
     private void RandomSpawnLocation()
     {
-        Vector3 spawnPos = new Vector3(Random.Range(-5, 5), Random.Range(-5, 5), Random.Range(-5, 5));
+        Vector3 spawnPos = new Vector3(Random.Range(-5, 5), Random.Range(-5, 5), 0);
         Instantiate(gameObject, spawnPos, gameObject.transform.rotation);
     }
 }
