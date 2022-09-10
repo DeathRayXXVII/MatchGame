@@ -6,10 +6,10 @@ using Random = System.Random;
 
 public class triggerEventBehaviour : MonoBehaviour
 {
-   public Renderer rend;
-   public UnityEvent triggerEnterEvent,mouseOver,collisionExit, enable;
-   public Color meshOverColor = Color.magenta;
-   public Color originalColor;
+   public Renderer rend; //making the renderer usable
+   public UnityEvent triggerEnterEvent,mouseOver,collisionExit, enable; //making the events public
+   public Color meshOverColor = Color.magenta; //set the new color
+   public Color originalColor; //setting the original color
    public MeshRenderer meshRend;
    public Mesh mesh;
    
@@ -33,11 +33,13 @@ public class triggerEventBehaviour : MonoBehaviour
    private void OnMouseOver()
    {
       mouseOver.Invoke();
+      //changes the color to the set color
       meshRend.material.color = meshOverColor;
    }
 
    private void OnMouseExit()
    {
+      //Changing the color back to original color
       meshRend.material.color = originalColor;
    }
 
