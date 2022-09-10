@@ -20,6 +20,6 @@ public class textLableBehavior : MonoBehaviour
     public void UpdateLabel()
     {
         Label.text = dataObj.value.ToString(CultureInfo.CurrentCulture);
-        Label.text = dataObject.value.ToString(CultureInfo.CurrentCulture);
+        //Label.text = dataObject.value.ToString(CultureInfo.CurrentCulture);
     }
 }

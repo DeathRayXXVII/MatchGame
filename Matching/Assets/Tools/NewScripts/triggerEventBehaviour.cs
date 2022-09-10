@@ -7,10 +7,11 @@ using Random = System.Random;
 public class triggerEventBehaviour : MonoBehaviour
 {
    public Renderer rend;
-   public UnityEvent triggerEnterEvent,mouseOver;
-   public Color meshOverColor = Color.magenta.;
+   public UnityEvent triggerEnterEvent,mouseOver,collisionExit;
+   public Color meshOverColor = Color.magenta;
    public Color originalColor;
    public MeshRenderer meshRend;
+   public Mesh mesh;
    
 
    private void Start()
@@ -20,17 +21,13 @@ public class triggerEventBehaviour : MonoBehaviour
       meshRend = GetComponent<MeshRenderer>();
       //Grabs the original color of the gameobject
       originalColor = meshRend.material.color;
+      //OnCollisionExit();
       
    }
 
    private void OnTriggerEnter(Collider other)
    {
       triggerEnterEvent.Invoke();
-   }
-
-   private void OnCollisionEnter2D(Collision2D col)
-   {
-      print("Testing");
    }
 
    private void OnMouseOver()
@@ -42,5 +39,12 @@ public class triggerEventBehaviour : MonoBehaviour
    private void OnMouseExit()
    {
       meshRend.material.color = originalColor;
+   }
+
+   private void OnCollisionExit(Collision collision)
+   {
+      //collisionExit.Invoke();
+      mesh = new Mesh();
+      GetComponent<MeshFilter>().mesh = mesh;
    }
 }

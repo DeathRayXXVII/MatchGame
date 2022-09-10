@@ -5483,6 +5483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ec57b453ce83941a1d0a2f8c5f01cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rend: {fileID: 0}
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
@@ -5498,6 +5499,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  mouseOver:
+    m_PersistentCalls:
+      m_Calls: []
+  collisionExit:
+    m_PersistentCalls:
+      m_Calls: []
+  meshOverColor: {r: 1, g: 0, b: 1, a: 1}
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  meshRend: {fileID: 0}
+  mesh: {fileID: 0}
 --- !u!136 &354382131
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5685,6 +5696,7 @@ GameObject:
   - component: {fileID: 642103902}
   - component: {fileID: 642103901}
   - component: {fileID: 642103906}
+  - component: {fileID: 642103907}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5843,6 +5855,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &642103907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642103900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ec57b453ce83941a1d0a2f8c5f01cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 642103903}
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  mouseOver:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 642103900}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  collisionExit:
+    m_PersistentCalls:
+      m_Calls: []
+  meshOverColor: {r: 1, g: 0, b: 1, a: 1}
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  meshRend: {fileID: 0}
+  mesh: {fileID: 0}
 --- !u!1 &1039499049
 GameObject:
   m_ObjectHideFlags: 0
@@ -5875,6 +5925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ec57b453ce83941a1d0a2f8c5f01cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rend: {fileID: 0}
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
@@ -5914,6 +5965,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  mouseOver:
+    m_PersistentCalls:
+      m_Calls: []
+  collisionExit:
+    m_PersistentCalls:
+      m_Calls: []
+  meshOverColor: {r: 1, g: 0, b: 1, a: 1}
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  meshRend: {fileID: 0}
+  mesh: {fileID: 0}
 --- !u!135 &1039499051
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6286,6 +6347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ec57b453ce83941a1d0a2f8c5f01cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rend: {fileID: 0}
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
@@ -6325,6 +6387,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  mouseOver:
+    m_PersistentCalls:
+      m_Calls: []
+  collisionExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 642103904}
+        m_TargetAssemblyTypeName: UnityEngine.MeshFilter, UnityEngine
+        m_MethodName: set_mesh
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Mesh, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  meshOverColor: {r: 1, g: 0, b: 1, a: 1}
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  meshRend: {fileID: 0}
+  mesh: {fileID: 0}
 --- !u!135 &1850872965
 SphereCollider:
   m_ObjectHideFlags: 0
