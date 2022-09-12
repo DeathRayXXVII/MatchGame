@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/MatchingGameScripts/textLableBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -64,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662942676831</updated>
       <workItem from="1662942683377" duration="938000" />
-      <workItem from="1662999081217" duration="2252000" />
+      <workItem from="1662999081217" duration="3367000" />
     </task>
     <servers />
   </component>
@@ -87,5 +90,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Tools/MatchingGameScripts/textLableBehavior.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\GitReposotory\MatchGame\Matching\Assets\Tools\MatchingGameScripts\textLableBehavior.cs" initialLine="18" containingFunctionPresentation="method 'UpdateLabel'">
+            <startOffsets>
+              <option value="459" />
+            </startOffsets>
+            <endOffsets>
+              <option value="521" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
