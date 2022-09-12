@@ -8,6 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tools/MatchingGameScripts/ColorID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/MatchingGameScripts/IDContanerBehavour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/MatchingGameScripts/MatchBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tools/NewScripts/PositionCheak.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,7 +81,7 @@
       <workItem from="1662066230401" duration="5050000" />
       <workItem from="1662591992664" duration="2436000" />
       <workItem from="1662760870927" duration="7220000" />
-      <workItem from="1662937737091" duration="856000" />
+      <workItem from="1662937737091" duration="3155000" />
     </task>
     <servers />
   </component>
