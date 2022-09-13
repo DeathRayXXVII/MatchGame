@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -5,14 +6,14 @@ public class MatchBehaviour : MonoBehaviour
 {
     public ID idObj;
     private ID otherID;
-    public UnityEvent matchEvent, noMatchEventt;
-    private void OnTriggerEnter(Collider other)
+    public UnityEvent matchEvent, noMatchEvent, noMatchDelayed; 
+    private IEnumerator OnTriggerEnter(Collider other)
     {
         //fecting the otherID from a diffrent script
         var tempObj = other.GetComponent<IDContanerBehavour>();
         //if this is not null get the ID
         if (tempObj == null)
-            return;
+           yield break;
         
         var otherID = tempObj.idObj;
         //checking if the ID's are the same
@@ -22,7 +23,9 @@ public class MatchBehaviour : MonoBehaviour
         }
         else
         {
-            noMatchEventt.Invoke();
+            noMatchEvent.Invoke();
+            yield return new WaitForSeconds(0.5f);
+            noMatchDelayed.Invoke();
         }
     }
 }
