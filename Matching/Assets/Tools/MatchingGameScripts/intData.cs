@@ -6,7 +6,6 @@ using UnityEngine.Events;
 [CreateAssetMenu]
 public class intData : ScriptableObject
 {
-    public UnityEvent disableEvent;
     public int value;
 
     public void SetValue(int num)
@@ -14,13 +13,25 @@ public class intData : ScriptableObject
         value = num;
     }
 
+    public void CompareValue(intData obj)
+    {
+        if (value >= obj.value)
+        {
+            
+        }
+        else
+        {
+            value = obj.value;
+        }
+    }
+
     public void UpdateValue(int num)
     {
         value += num;
     }
 
-    private void OnDisable()
+    public void SetValue(intData obj)
     {
-        disableEvent.Invoke();
+        value = obj.value;
     }
 }
