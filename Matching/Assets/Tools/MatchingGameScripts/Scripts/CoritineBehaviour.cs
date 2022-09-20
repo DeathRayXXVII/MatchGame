@@ -21,19 +21,20 @@ public class CoritineBehaviour : MonoBehaviour
 
     public void StartCounting()
     {
+        wfsObj = new WaitForSeconds(seconds);
+        wffuObj = new WaitForFixedUpdate();
         StartCoroutine(Counting());
     }
     // Start is called before the first frame update
     private IEnumerator Counting()
     {
-        wfsObj = new WaitForSeconds(seconds);
-        wffuObj = new WaitForFixedUpdate();
+        
         startCountEvent.Invoke();
         yield return wfsObj;
         
         while(counterNum.value > 0)
         { 
-            Debug.Log(counterNum);
+            
             repeatCountEvent.Invoke();
             counterNum.value--;
             yield return wfsObj;
