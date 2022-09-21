@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -13,6 +14,7 @@ namespace Tools.MatchingGameScripts.Scripts
         public float seconds = 3.0f;
         private WaitForSeconds _wfsObj;
         private WaitForFixedUpdate _wffuObj;
+        
 
         private void Start()
         {
@@ -26,7 +28,6 @@ namespace Tools.MatchingGameScripts.Scripts
         
             StartCoroutine(Counting());
         }
-        // Start is called before the first frame update
         private IEnumerator Counting()
         {
             startCountEvent.Invoke();
@@ -43,11 +44,12 @@ namespace Tools.MatchingGameScripts.Scripts
 
         public void StartRepeatUntilFalse()
         {
-            canRun = true;
+            
             StartCoroutine(RepeatUntilFalse());
         }
         private IEnumerator RepeatUntilFalse()
         {
+            canRun = true;
             while(canRun)
             {
                 yield return _wffuObj;
