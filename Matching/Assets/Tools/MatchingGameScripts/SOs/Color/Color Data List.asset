@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b94251d92e8c651499d26da46aebd839, type: 3}
-  m_Name: v3 C
+  m_Script: {fileID: 11500000, guid: 093ed10442aede14ab06653e063187b0, type: 3}
+  m_Name: Color Data List
   m_EditorClassIdentifier: 
-  value: {x: -3, y: 5, z: 0}
+  colorIDList:
+  - {fileID: 11400000, guid: fe5c0afe2ca35a2479c4781ec652d89f, type: 2}
+  - {fileID: 11400000, guid: 6ad02e699a53e544d9eaec54f831ff1c, type: 2}

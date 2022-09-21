@@ -1,58 +1,58 @@
-using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class CoritineBehaviour : MonoBehaviour
+namespace Tools.MatchingGameScripts.Scripts
 {
-    public UnityEvent startEvent, startCountEvent, repeatCountEvent, endCountEvent, repeatUntilFalseEvent;
+    public class CoritineBehaviour : MonoBehaviour
+    {
+        public UnityEvent startEvent, startCountEvent, repeatCountEvent, endCountEvent, repeatUntilFalseEvent;
 
-    public bool canRun;
-    public intData counterNum;
-    public float seconds = 3.0f;
-    private WaitForSeconds wfsObj;
-    private WaitForFixedUpdate wffuObj;
+        public bool canRun;
+        public intData counterNum;
+        public float seconds = 3.0f;
+        private WaitForSeconds _wfsObj;
+        private WaitForFixedUpdate _wffuObj;
 
-    private void Start()
-    {
-        startEvent.Invoke();
-    }
-
-    public void StartCounting()
-    {
-        wfsObj = new WaitForSeconds(seconds);
-        wffuObj = new WaitForFixedUpdate();
-        StartCoroutine(Counting());
-    }
-    // Start is called before the first frame update
-    private IEnumerator Counting()
-    {
-        
-        startCountEvent.Invoke();
-        yield return wfsObj;
-        
-        while(counterNum.value > 0)
-        { 
-            
-            repeatCountEvent.Invoke();
-            counterNum.value--;
-            yield return wfsObj;
-        }
-        endCountEvent.Invoke();
-    }
-
-    public void StartRepeatUntilFalse()
-    {
-        canRun = true;
-        StartCoroutine(RepeatUnitlFalse());
-    }
-    private IEnumerator RepeatUnitlFalse()
-    {
-        while(canRun)
+        private void Start()
         {
-            yield return wffuObj;
-            repeatUntilFalseEvent.Invoke();
+            _wfsObj = new WaitForSeconds(seconds);
+            _wffuObj = new WaitForFixedUpdate();
+            startEvent.Invoke();
+        }
+
+        public void StartCounting()
+        {
+        
+            StartCoroutine(Counting());
+        }
+        // Start is called before the first frame update
+        private IEnumerator Counting()
+        {
+            startCountEvent.Invoke();
+            yield return _wfsObj;
+            while(counterNum.value > 0)
+            { 
+            
+                repeatCountEvent.Invoke();
+                counterNum.value--;
+                yield return _wfsObj;
+            }
+            endCountEvent.Invoke();
+        }
+
+        public void StartRepeatUntilFalse()
+        {
+            canRun = true;
+            StartCoroutine(RepeatUntilFalse());
+        }
+        private IEnumerator RepeatUntilFalse()
+        {
+            while(canRun)
+            {
+                yield return _wffuObj;
+                repeatUntilFalseEvent.Invoke();
+            }
         }
     }
 }
