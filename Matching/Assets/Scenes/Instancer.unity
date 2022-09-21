@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.1758823
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -240,7 +240,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1903739909}
-        m_TargetAssemblyTypeName: CoritineBehaviour, Assembly-CSharp
+        m_TargetAssemblyTypeName: Tools.MatchingGameScripts.Scripts.CoritineBehaviour,
+          Assembly-CSharp
         m_MethodName: StartRepeatUntilFalse
         m_Mode: 1
         m_Arguments:
@@ -263,6 +264,18 @@ MonoBehaviour:
   repeatUntilFalseEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: 4de68bef46a48014a8a81b4347a81633, type: 2}
+        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
+        m_MethodName: SetCurrentColorRandomly
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: bfdc85f1a81b70a4a85cc0095dee491b, type: 2}
         m_TargetAssemblyTypeName: Instancers, Assembly-CSharp
         m_MethodName: CreateInstanceListRandomly
@@ -275,13 +288,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 4de68bef46a48014a8a81b4347a81633, type: 2}
-        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
-        m_MethodName: SetCurrentColorRandomly
-        m_Mode: 1
+      - m_Target: {fileID: 11400000, guid: 45189f3d80a753f4696b24c3bf624d52, type: 2}
+        m_TargetAssemblyTypeName: Instancers, Assembly-CSharp
+        m_MethodName: CreateInstanceListRandomly
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: ab551eea2f5636842b86f7b138777b67, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Vector3DataList, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
