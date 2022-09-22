@@ -52,7 +52,7 @@ namespace Tools.MatchingGameScripts.Scripts
             canRun = true;
             while(canRun)
             {
-                yield return _wffuObj;
+                yield return _wfsObj;
                 repeatUntilFalseEvent.Invoke();
             }
         }

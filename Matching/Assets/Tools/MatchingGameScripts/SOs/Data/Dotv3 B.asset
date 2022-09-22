@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ac351b1becc04046a1a23342ac23403, type: 3}
-  m_Name: Dot V3 List
+  m_Script: {fileID: 11500000, guid: b94251d92e8c651499d26da46aebd839, type: 3}
+  m_Name: Dotv3 B
   m_EditorClassIdentifier: 
-  vector3Dlist:
-  - {fileID: 11400000, guid: 58ac4ba220ff8eb41965caa2fccb5c4b, type: 2}
-  - {fileID: 11400000, guid: 2f3f555e61a3742459f27e0209b4048b, type: 2}
+  value: {x: 3, y: -3, z: 0}

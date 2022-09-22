@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -1904317261729708391}
   - component: {fileID: -992391339921561493}
   - component: {fileID: -2673150661994764556}
+  - component: {fileID: 4151716768791573966}
   m_Layer: 7
   m_Name: Ring
   m_TagString: Untagged
@@ -132,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc10bc9385cf9cd409f21be768d323b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 3
+  seconds: 1
 --- !u!114 &-1904317261729708391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +196,41 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: 4de68bef46a48014a8a81b4347a81633, type: 2}
+--- !u!114 &4151716768791573966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2890307264745525927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152ad31a47a302e468f8946a24a88c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 11400000, guid: e838a855841b4db4fa3e30d20c2bd747, type: 2}
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4151716768791573966}
+        m_TargetAssemblyTypeName: ColorMatchBehaviour, Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6894113075218564340}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchDelayed:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: 4de68bef46a48014a8a81b4347a81633, type: 2}
 --- !u!1 &4514369154146889052
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9028768936238300971}
   - component: {fileID: 6894113075218564340}
+  - component: {fileID: 3825463337702347164}
   m_Layer: 0
   m_Name: Hidden Dot
   m_TagString: Untagged
@@ -279,3 +316,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3825463337702347164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4514369154146889052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf08d4d9a0b1094085938e3f2c434f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
