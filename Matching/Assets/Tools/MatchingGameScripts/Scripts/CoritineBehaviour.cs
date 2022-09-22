@@ -44,12 +44,12 @@ namespace Tools.MatchingGameScripts.Scripts
 
         public void StartRepeatUntilFalse()
         {
-            
+            canRun = true;
             StartCoroutine(RepeatUntilFalse());
         }
         private IEnumerator RepeatUntilFalse()
         {
-            canRun = true;
+            
             while(canRun)
             {
                 yield return _wfsObj;

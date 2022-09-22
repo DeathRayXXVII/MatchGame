@@ -2,10 +2,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MatchBehaviour : MonoBehaviour
+public class MatchBehaviour : IDContanerBehavour
 {
-    public ID idObj;
-    private ID otherID;
     public UnityEvent matchEvent, noMatchEvent, noMatchDelayed; 
     private IEnumerator OnTriggerEnter(Collider other)
     {
