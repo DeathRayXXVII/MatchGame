@@ -12,14 +12,14 @@ namespace Tools.MatchingGameScripts.Scripts
         public bool canRun;
         public intData counterNum;
         public float seconds = 3.0f;
-        private WaitForSeconds _wfsObj;
-        private WaitForFixedUpdate _wffuObj;
+        private WaitForSeconds wfsObj;
+        private WaitForFixedUpdate wffuObj;
         
 
         private void Start()
         {
-            _wfsObj = new WaitForSeconds(seconds);
-            _wffuObj = new WaitForFixedUpdate();
+            wfsObj = new WaitForSeconds(seconds);
+            wffuObj = new WaitForFixedUpdate();
             startEvent.Invoke();
         }
 
@@ -31,13 +31,13 @@ namespace Tools.MatchingGameScripts.Scripts
         private IEnumerator Counting()
         {
             startCountEvent.Invoke();
-            yield return _wfsObj;
+            yield return wfsObj;
             while(counterNum.value > 0)
             { 
             
                 repeatCountEvent.Invoke();
                 counterNum.value--;
-                yield return _wfsObj;
+                yield return wfsObj;
             }
             endCountEvent.Invoke();
         }
@@ -52,9 +52,11 @@ namespace Tools.MatchingGameScripts.Scripts
             
             while(canRun)
             {
-                yield return _wfsObj;
+                yield return wfsObj;
                 repeatUntilFalseEvent.Invoke();
             }
         }
+        
+        
     }
 }
