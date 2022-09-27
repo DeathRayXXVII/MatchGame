@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152ad31a47a302e468f8946a24a88c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: 6ad02e699a53e544d9eaec54f831ff1c, type: 2}
+  idObj: {fileID: 0}
   startEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -276,18 +276,6 @@ MonoBehaviour:
   noMatchEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8636014518407541402}
-        m_TargetAssemblyTypeName: DragableBehaviour, Assembly-CSharp
-        m_MethodName: OnMouseUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 7824923045173346105}
         m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
         m_MethodName: set_enabled
@@ -327,7 +315,7 @@ MonoBehaviour:
   noMatchDelayed:
     m_PersistentCalls:
       m_Calls: []
-  colorIDDataListObj: {fileID: 0}
+  colorIDDataListObj: {fileID: 11400000, guid: 4de68bef46a48014a8a81b4347a81633, type: 2}
 --- !u!114 &8636014518407541402
 MonoBehaviour:
   m_ObjectHideFlags: 0
