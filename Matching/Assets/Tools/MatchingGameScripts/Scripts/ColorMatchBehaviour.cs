@@ -6,7 +6,7 @@ public class ColorMatchBehaviour : MatchBehaviour
 
     private void Awake()
     {
-        idObj = colorIDDataListObj.currentColor;
+        if (colorIDDataListObj != null) idObj = colorIDDataListObj.currentColor;
     }
 
     public void ChangeColor(SpriteRenderer renderer)

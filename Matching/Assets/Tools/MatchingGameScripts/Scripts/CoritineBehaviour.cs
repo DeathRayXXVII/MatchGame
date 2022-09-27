@@ -14,7 +14,13 @@ namespace Tools.MatchingGameScripts.Scripts
         public float seconds = 3.0f;
         private WaitForSeconds wfsObj;
         private WaitForFixedUpdate wffuObj;
-        
+
+        public bool CanRun
+        {
+            get => canRun;
+            set => canRun = value;
+        }
+
 
         private void Start()
         {
@@ -44,13 +50,13 @@ namespace Tools.MatchingGameScripts.Scripts
 
         public void StartRepeatUntilFalse()
         {
-            canRun = true;
+            CanRun = true;
             StartCoroutine(RepeatUntilFalse());
         }
         private IEnumerator RepeatUntilFalse()
         {
             
-            while(canRun)
+            while(CanRun)
             {
                 yield return wfsObj;
                 repeatUntilFalseEvent.Invoke();

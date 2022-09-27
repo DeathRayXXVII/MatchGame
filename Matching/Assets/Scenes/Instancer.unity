@@ -262,5 +262,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: InstancerGO
       objectReference: {fileID: 0}
+    - target: {fileID: 7970659984183089995, guid: afcf1880cc452d948a5a9151630ccabe, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970659984183089995, guid: afcf1880cc452d948a5a9151630ccabe, type: 3}
+      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970659984183089995, guid: afcf1880cc452d948a5a9151630ccabe, type: 3}
+      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CreateInstanceListRandomly
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970659984183089995, guid: afcf1880cc452d948a5a9151630ccabe, type: 3}
+      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CreatInstance
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970659984183089995, guid: afcf1880cc452d948a5a9151630ccabe, type: 3}
+      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: a1a69ccbdf9e5f5418d092ebe290619b, type: 2}
+    - target: {fileID: 7970659984183089995, guid: afcf1880cc452d948a5a9151630ccabe, type: 3}
+      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970659984183089995, guid: afcf1880cc452d948a5a9151630ccabe, type: 3}
+      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Vector3DataList, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970659984183089995, guid: afcf1880cc452d948a5a9151630ccabe, type: 3}
+      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afcf1880cc452d948a5a9151630ccabe, type: 3}
