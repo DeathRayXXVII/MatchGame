@@ -73,6 +73,18 @@ MonoBehaviour:
   repeatUntilFalseEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: 4de68bef46a48014a8a81b4347a81633, type: 2}
+        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
+        m_MethodName: SetCurrentColorRandomly
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: bfdc85f1a81b70a4a85cc0095dee491b, type: 2}
         m_TargetAssemblyTypeName: Instancers, Assembly-CSharp
         m_MethodName: CreateInstanceListRandomly
@@ -97,21 +109,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 4de68bef46a48014a8a81b4347a81633, type: 2}
-        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
-        m_MethodName: SetCurrentColorRandomly
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   canRun: 0
   counterNum: {fileID: 0}
-  seconds: 2
+  seconds: 1.5
 --- !u!114 &5041501882967019034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,13 +128,14 @@ MonoBehaviour:
   onRaiseEvnet:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 7970659984183089995}
+        m_TargetAssemblyTypeName: Tools.MatchingGameScripts.Scripts.CoritineBehaviour,
+          Assembly-CSharp
+        m_MethodName: set_CanRun
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
